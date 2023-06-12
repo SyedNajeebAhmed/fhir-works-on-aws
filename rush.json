@@ -14,7 +14,7 @@
     "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
   },
   "repository": {
-    "url": "https://github.com/aws-solutions/fhir-works-on-aws.git",
+    "url": "https://github.com/SyedNajeebAhmed/fhir-works-on-aws.git",
     "defaultBranch": "main"
   },
   "eventHooks": {
