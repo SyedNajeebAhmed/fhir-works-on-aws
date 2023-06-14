@@ -13213,6 +13213,14 @@
     "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "careTeam.provider" }]
   },
   {
+    "name": "billablePeriod",
+    "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-billablePeriod",
+    "type": "date",
+    "description": "Transaction window",
+    "base": "ExplanationOfBenefit",
+    "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "billablePeriod" }]
+  },
+  {
     "name": "claim",
     "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-claim",
     "type": "reference",
@@ -13231,12 +13239,29 @@
     "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "insurance.coverage" }]
   },
   {
+    "name": "insurer",
+    "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-insurer",
+    "type": "reference",
+    "description": "The payor organization",
+    "base": "ExplanationOfBenefit",
+    "target": ["Organization"],
+    "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "insurer" }]
+  },
+  {
     "name": "created",
     "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-created",
     "type": "date",
     "description": "The creation date for the EOB",
     "base": "ExplanationOfBenefit",
     "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "created" }]
+  },
+  {
+    "name": "service-period",
+    "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-item",
+    "type": "date",
+    "description": "The service period for the patient",
+    "base": "ExplanationOfBenefit",
+    "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "item.servicedPeriod" }]
   },
   {
     "name": "detail-udi",
@@ -13342,6 +13367,14 @@
     "description": "Status of the instance",
     "base": "ExplanationOfBenefit",
     "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "status" }]
+  },
+  {
+    "name": "type",
+    "url": "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-type",
+    "type": "token",
+    "description": "E.g. institutional, professional, pharmacy",
+    "base": "ExplanationOfBenefit",
+    "compiled": [{ "resourceType": "ExplanationOfBenefit", "path": "type" }]
   },
   {
     "name": "subdetail-udi",
